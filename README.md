@@ -21,7 +21,7 @@ Este repositório contém um sistema de visualização interativo desenvolvido e
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/usuario/repositorio.git
+    git clone https://github.com/KaueBrandao/Simulador-For-a-Magnetica.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
