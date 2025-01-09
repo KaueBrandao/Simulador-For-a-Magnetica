@@ -25,7 +25,7 @@ Este repositório contém um sistema de visualização interativo desenvolvido e
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd nome-do-repositorio
+    cd Simulador-For-a-Magnetica
     ```
 3. Instale as dependências necessárias:
     ```bash
@@ -33,7 +33,7 @@ Este repositório contém um sistema de visualização interativo desenvolvido e
     ```
 4. Execute o script Python:
     ```bash
-    python nome_do_arquivo.py
+    python App.py
     ```
 
 ## Como Usar
