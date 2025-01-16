@@ -45,6 +45,7 @@ Você pode instalar as dependências utilizando o `pip`:
 
 ```bash
 pip install vpython matplotlib numpy
+```
 
 
 ## Como Executar o Sistema
