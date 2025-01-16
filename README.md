@@ -1,21 +1,47 @@
 # Sistema de Visualização da Força Magnética
 
-Este repositório contém um sistema de visualização interativo desenvolvido em Python, com o objetivo de ilustrar os conceitos da força magnética, com base na fórmula da Força Magnética. O sistema permite ao usuário explorar como a carga elétrica, a velocidade da partícula, o campo magnético e o ângulo entre eles influenciam a força magnética. O sistema combina gráficos 3D e animações para uma compreensão mais intuitiva dos fenômenos eletromagnéticos.
+Este repositório contém um sistema interativo que simula o movimento de partículas carregadas sob a influência de um campo magnético. O sistema é desenvolvido em Python, utilizando bibliotecas como `vpython` para animações 3D, `matplotlib` para gráficos e `tkinter` para a interface gráfica de usuário (GUI).
+
+## Descrição
+
+O sistema visualiza diferentes tipos de trajetórias de partículas carregadas em um campo magnético, incluindo:
+
+- **Movimento Retilíneo Uniforme (MRU)**
+- **Movimento Circular Uniforme (MCU)**
+- **Movimento Espiral (ângulo intermediário entre 0° e 90°)**
+
+Além disso, o código permite o cálculo da força magnética aplicada a uma carga em movimento através da fórmula:
+
+F = Q V B sin(alpha)
+
+Onde:
+- \( Q \) é a carga elétrica (Coulombs)
+- \( v \) é a velocidade da partícula (m/s)
+- \( B \) é a intensidade do campo magnético (Tesla)
+- \( \alpha \) é o ângulo entre a direção da velocidade e a do campo magnético (graus)
 
 ## Funcionalidades
 
-- **Gráfico 3D Interativo**: O usuário pode visualizar a força magnética, o campo magnético e a velocidade da partícula através de um gráfico 3D. Os vetores são representados no gráfico para ilustrar as interações entre esses elementos.
-- **Controles de Entrada**: O usuário pode ajustar a carga elétrica, a velocidade da partícula, a intensidade do campo magnético e o ângulo entre a velocidade e o campo magnético por meio de sliders, observando em tempo real as mudanças no gráfico.
-- **Animações**: O sistema também oferece animações para representar diferentes trajetórias da carga elétrica, incluindo movimento perpendicular e movimento circular uniforme (MCU) com base nas variações do ângulo.
+- **Interface Gráfica**: Uma interface com entradas para os parâmetros físicos da força magnética.
+- **Animações 3D**: Exibição de movimentos de partículas, incluindo MRU, MCU e espiral.
+- **Gráficos Interativos**: Visualização da força magnética em um gráfico 3D.
+- **Cálculos Automáticos**: Cálculo da força magnética baseado nas entradas fornecidas pelo usuário.
 
-## Tecnologias Utilizadas
+## Pré-requisitos
 
-- **Python**: Linguagem de programação principal para o desenvolvimento do sistema.
-- **Tkinter**: Biblioteca utilizada para criar a interface gráfica do usuário (GUI).
-- **Matplotlib**: Usada para gerar os gráficos 3D interativos.
-- **Numpy**: Biblioteca para realizar cálculos numéricos e matemáticos.
-- **Math**: Para funções matemáticas, como o cálculo de seno e cosseno.
-- **mpl_toolkits.mplot3d**: Para visualizações 3D no matplotlib.
+Para rodar o sistema, é necessário ter as seguintes bibliotecas instaladas:
+
+- Python 3.x
+- vpython
+- matplotlib
+- tkinter
+- numpy
+
+Você pode instalar as dependências utilizando o `pip`:
+
+```bash
+pip install vpython matplotlib numpy
+
 
 ## Como Executar o Sistema
 
@@ -27,11 +53,7 @@ Este repositório contém um sistema de visualização interativo desenvolvido e
     ```bash
     cd Simulador-For-a-Magnetica
     ```
-3. Instale as dependências necessárias:
-    ```bash
-    pip install matplotlib numpy
-    ```
-4. Execute o script Python:
+3. Execute o script Python:
     ```bash
     python App.py
     ```
@@ -39,7 +61,7 @@ Este repositório contém um sistema de visualização interativo desenvolvido e
 ## Como Usar
 
 - Ao abrir o sistema, os valores iniciais são definidos para: Carga = 1 C, Velocidade = 1 m/s, Campo Magnético = 1 T e Ângulo = 30°.
-- O usuário pode modificar esses valores usando os sliders.
+- O usuário pode modificar esses valores usando os campos de entrada.
 - Após ajustar os valores, clique em "Atualizar Gráfico" para visualizar a alteração no gráfico 3D.
 - O botão "Trajetórias" permite visualizar animações com diferentes ângulos, representando o movimento da carga elétrica.
 
