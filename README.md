@@ -2,6 +2,10 @@
 
 Este repositório contém um sistema interativo que simula o movimento de partículas carregadas sob a influência de um campo magnético. O sistema é desenvolvido em Python, utilizando bibliotecas como `vpython` para animações 3D, `matplotlib` para gráficos e `tkinter` para a interface gráfica de usuário (GUI).
 
+# Telas do Sistema
+![Tela1](/tela1.PNG)
+![Tela1](/tela2.PNG)
+
 ## Descrição
 
 O sistema visualiza diferentes tipos de trajetórias de partículas carregadas em um campo magnético, incluindo:
